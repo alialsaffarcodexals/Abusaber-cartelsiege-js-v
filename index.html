@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Abu Saber: Cartel Siege — HTML/JS Edition</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <div id="app">
+    <canvas id="game-canvas"></canvas>
+    <div id="hud"></div>
+    <div id="overlay"></div>
+
+    <!-- Loading screen -->
+    <div id="loading">
+      <div class="load-logo">ABU SABER</div>
+      <div class="load-sub">CARTEL SIEGE</div>
+      <div class="load-bar"><div class="load-fill"></div></div>
+      <div class="load-tip" id="load-tip">Loading tactical systems…</div>
+    </div>
+
+    <!-- Pointer-lock prompt -->
+    <div id="lock-hint">
+      <div class="lock-card">
+        <div class="lock-icon">🎯</div>
+        <div class="lock-title">CLICK TO ENGAGE</div>
+        <div class="lock-text">Mouse look is locked to the window. Press <b>Esc</b> to pause.</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
